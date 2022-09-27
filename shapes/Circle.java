@@ -11,6 +11,10 @@ public class Circle{
 
 
     public Circle(double rad){
+        if(rad <= 0){
+      throw new IllegalArgumentException("The radius of a circle must be positive");
+    }
+        
         r = rad;
     }
 
@@ -31,6 +35,10 @@ public class Circle{
 
 
     public void setRadius(double rad){
+        if(rad <= 0){
+      throw new IllegalArgumentException("The radius of a circle must be positive");
+    }
+        
         r = rad;
     }
 
