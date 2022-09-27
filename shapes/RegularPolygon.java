@@ -53,7 +53,7 @@ public class RegularPolygon {
 
     
     public double getArea(){
-        return ((sideLength*sideLength)*sides)/(4*Math.tan(180/sides));
+        return ((sideLength * sideLength) * n) / (4 * Math.tan((180 / n) * pi / 180));
     }
 
     
