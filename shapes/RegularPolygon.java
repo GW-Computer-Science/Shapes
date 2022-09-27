@@ -2,7 +2,7 @@ package shapes;
 
 import java.lang.Math;
 
-public class RegularPolygon {
+public class RegularPolygon extends java.lang.Object{
     private int sides;
     private double sideLength;
     final double pi = 3.14159;
