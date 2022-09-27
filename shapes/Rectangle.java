@@ -42,7 +42,7 @@ public class Rectangle{
 
     
     public void setWidth(double wid){
-        if(len <= 0){
+        if(wid <= 0){
       throw new IllegalArgumentException("The width of a rectangle must be positive");
     }
         
