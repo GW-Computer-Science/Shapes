@@ -1,6 +1,6 @@
 package shapes;
 
-public class Rectangle{
+public class Rectangle extends java.lang.Object{
     private double l, w;
 
 
