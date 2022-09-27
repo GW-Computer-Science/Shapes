@@ -15,29 +15,51 @@ public class RegularPolygon {
 
     
     public RegularPolygon(int s){
+        if(s < 3){
+            throw new IllegalArgumentException("The number of sides in a regular polygon must be 3 or greater");
+        }
+        
         sides = s;
         sideLength = 1;
   }
 
     
     public RegularPolygon(double sL){
+        if(sL <= 0){
+            throw new IllegalArgumentException("The length of a side must be positive");
+        }
+        
         sides = 3;
         sideLength = sL;
     }
 
     
     public RegularPolygon(int s, double sL){
+        if(s < 3){
+            throw new IllegalArgumentException("The number of sides in a regular polygon must be 3 or greater");
+        } else if(sL <= 0){
+            throw new IllegalArgumentException("The length of a side must be positive");
+        }
+        
         sides = s;
         sideLength = sL;
     }
 
     
     public void setSideLength(double sL){
+        if(sL <= 0){
+            throw new IllegalArgumentException("The length of a side must be positive");
+        }
+        
         sideLength = sL;
     }
 
     
     public void setNumSides(int s){
+        if(s < 3){
+            throw new IllegalArgumentException("The number of sides in a regular polygon must be 3 or greater");
+        }
+        
         sides = s;
     }
 
