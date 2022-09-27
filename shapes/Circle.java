@@ -35,9 +35,8 @@ public class Circle extends java.lang.Object{
 
     public void setRadius(double rad){
         if(rad <= 0){
-      throw new IllegalArgumentException("The radius of a circle must be positive");
-    }
-        
+            throw new IllegalArgumentException("The radius of a circle must be positive");
+        }
         r = rad;
     }
 
