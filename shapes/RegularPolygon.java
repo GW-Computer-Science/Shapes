@@ -18,7 +18,6 @@ public class RegularPolygon extends java.lang.Object{
         if(s < 3){
             throw new IllegalArgumentException("The number of sides in a regular polygon must be 3 or greater");
         }
-        
         sides = s;
         sideLength = 1;
   }
@@ -28,7 +27,6 @@ public class RegularPolygon extends java.lang.Object{
         if(sL <= 0){
             throw new IllegalArgumentException("The length of a side must be positive");
         }
-        
         sides = 3;
         sideLength = sL;
     }
@@ -37,10 +35,10 @@ public class RegularPolygon extends java.lang.Object{
     public RegularPolygon(int s, double sL){
         if(s < 3){
             throw new IllegalArgumentException("The number of sides in a regular polygon must be 3 or greater");
-        } else if(sL <= 0){
+        }
+        else if(sL <= 0){
             throw new IllegalArgumentException("The length of a side must be positive");
         }
-        
         sides = s;
         sideLength = sL;
     }
@@ -50,7 +48,6 @@ public class RegularPolygon extends java.lang.Object{
         if(sL <= 0){
             throw new IllegalArgumentException("The length of a side must be positive");
         }
-        
         sideLength = sL;
     }
 
@@ -59,7 +56,6 @@ public class RegularPolygon extends java.lang.Object{
         if(s < 3){
             throw new IllegalArgumentException("The number of sides in a regular polygon must be 3 or greater");
         }
-        
         sides = s;
     }
 
@@ -89,7 +85,7 @@ public class RegularPolygon extends java.lang.Object{
             return true;
         }
         return false;
-  }
+    }
 
 
     public String toString(){
