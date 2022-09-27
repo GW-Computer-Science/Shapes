@@ -1,6 +1,6 @@
 package shapes;
 
-public class Circle{
+public class Circle extends java.lang.Object{
     final double pi = 3.14159;
     private double r;
 
