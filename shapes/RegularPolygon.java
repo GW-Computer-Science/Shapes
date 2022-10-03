@@ -60,6 +60,14 @@ public class RegularPolygon extends java.lang.Object{
     }
 
     
+    public void addSides(int s){
+        if(s < 1){
+            throw new IllegalArgumentException("You must add 1 or more sides to the regular polygon");
+        }
+        sides += s;
+    }
+    
+    
     public int getNumSides(){
         return sides;
     }
